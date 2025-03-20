@@ -12,6 +12,15 @@ class AnswerButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onSelected, child: Text(answer));
+    return SizedBox(
+      width: double.infinity,
+      child: ElevatedButton(
+        onPressed: onSelected,
+        style: ElevatedButton.styleFrom(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        ),
+        child: Text(answer),
+      ),
+    );
   }
 }
