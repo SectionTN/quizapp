@@ -17,9 +17,11 @@ class AnswerButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onSelected,
         style: ElevatedButton.styleFrom(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
         ),
-        child: Text(answer),
+        child: Text(answer, textAlign: TextAlign.center,),
       ),
     );
   }
